@@ -1,0 +1,11 @@
+syntax = "proto2";
+package protobuf;
+
+option java_package = "protobuf";
+option java_outer_classname = "TradeProtos";
+
+message Trade {
+  required string sym = 1;
+  required double rate = 2;
+  required double amount = 3;
+}
